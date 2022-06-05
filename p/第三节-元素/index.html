@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='元素（element）  其他叫法:标签,标记
+  元素的字母都应该小写，除了文档声明可以用大写字母。  元素的分类：  父元素 子元素 祖先元素 后代元素 兄弟元素（拥有同一个父元素的俩个元素）  元素的构成 元素=起始标记（begin tag）&#43;结束标记（end tag）&#43;元素内容&#43;元素属性
+元素的缺失  有些元素没有结束标记这样的元素叫做 “空元素”，我称之为单元素如：&amp;lt;meta&amp;gt;，&amp;lt;img&amp;gt;等  1  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;    有些元素也缺乏元素属性和元素内容：如&amp;lt;br&amp;gt;等  元素的嵌套：  元素可以嵌套，但是不能相互嵌套。  一些常用的元素 链接元素 a元素 超链接 href属性：hyper reference （超级参考，引用）：通常表示跳转地址   普通链接 ``
+  锚链接：表示跳转某个锚点 ``
+ 目录代码写法：a[href=&amp;quot;#lianjie$&amp;quot;]*6&amp;gt;{章节$ 章节代码写法：((h2[id=&amp;quot;lianjie$&amp;quot;]&amp;gt;{章节$})&#43;p&amp;gt;lorem1000)*6  $ 表示占位符，数字递增 Lorem 表示英文的假文乱字，1000表示有1000个乱字假文 &#43; 表示兄弟      功能链接：点击以后触发某个功能。 ``
+ 执行js代码 javascript: 发送邮件 malito： 要求用户计算机上安装有邮件发送软件，如exchange 拨打电话 tel： 要求用户计算机上安装拨号软件，或者使用移动端。    target属性  表示跳转窗口位置  target的取值：'><title>第三节 元素</title>
+
+<link rel='canonical' href='https://example.com/p/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%85%83%E7%B4%A0/'>
+
+<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='第三节 元素'>
+<meta property='og:description' content='元素（element）  其他叫法:标签,标记
+  元素的字母都应该小写，除了文档声明可以用大写字母。  元素的分类：  父元素 子元素 祖先元素 后代元素 兄弟元素（拥有同一个父元素的俩个元素）  元素的构成 元素=起始标记（begin tag）&#43;结束标记（end tag）&#43;元素内容&#43;元素属性
+元素的缺失  有些元素没有结束标记这样的元素叫做 “空元素”，我称之为单元素如：&amp;lt;meta&amp;gt;，&amp;lt;img&amp;gt;等  1  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;    有些元素也缺乏元素属性和元素内容：如&amp;lt;br&amp;gt;等  元素的嵌套：  元素可以嵌套，但是不能相互嵌套。  一些常用的元素 链接元素 a元素 超链接 href属性：hyper reference （超级参考，引用）：通常表示跳转地址   普通链接 ``
+  锚链接：表示跳转某个锚点 ``
+ 目录代码写法：a[href=&amp;quot;#lianjie$&amp;quot;]*6&amp;gt;{章节$ 章节代码写法：((h2[id=&amp;quot;lianjie$&amp;quot;]&amp;gt;{章节$})&#43;p&amp;gt;lorem1000)*6  $ 表示占位符，数字递增 Lorem 表示英文的假文乱字，1000表示有1000个乱字假文 &#43; 表示兄弟      功能链接：点击以后触发某个功能。 ``
+ 执行js代码 javascript: 发送邮件 malito： 要求用户计算机上安装有邮件发送软件，如exchange 拨打电话 tel： 要求用户计算机上安装拨号软件，或者使用移动端。    target属性  表示跳转窗口位置  target的取值：'>
+<meta property='og:url' content='https://example.com/p/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%85%83%E7%B4%A0/'>
+<meta property='og:site_name' content='演示站点'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-05-23T22:32:42&#43;08:00'/><meta property='article:modified_time' content='2022-05-23T22:32:42&#43;08:00'/>
+<meta name="twitter:title" content="第三节 元素">
+<meta name="twitter:description" content="元素（element）  其他叫法:标签,标记
+  元素的字母都应该小写，除了文档声明可以用大写字母。  元素的分类：  父元素 子元素 祖先元素 后代元素 兄弟元素（拥有同一个父元素的俩个元素）  元素的构成 元素=起始标记（begin tag）&#43;结束标记（end tag）&#43;元素内容&#43;元素属性
+元素的缺失  有些元素没有结束标记这样的元素叫做 “空元素”，我称之为单元素如：&amp;lt;meta&amp;gt;，&amp;lt;img&amp;gt;等  1  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;    有些元素也缺乏元素属性和元素内容：如&amp;lt;br&amp;gt;等  元素的嵌套：  元素可以嵌套，但是不能相互嵌套。  一些常用的元素 链接元素 a元素 超链接 href属性：hyper reference （超级参考，引用）：通常表示跳转地址   普通链接 ``
+  锚链接：表示跳转某个锚点 ``
+ 目录代码写法：a[href=&amp;quot;#lianjie$&amp;quot;]*6&amp;gt;{章节$ 章节代码写法：((h2[id=&amp;quot;lianjie$&amp;quot;]&amp;gt;{章节$})&#43;p&amp;gt;lorem1000)*6  $ 表示占位符，数字递增 Lorem 表示英文的假文乱字，1000表示有1000个乱字假文 &#43; 表示兄弟      功能链接：点击以后触发某个功能。 ``
+ 执行js代码 javascript: 发送邮件 malito： 要求用户计算机上安装有邮件发送软件，如exchange 拨打电话 tel： 要求用户计算机上安装拨号软件，或者使用移动端。    target属性  表示跳转窗口位置  target的取值：">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">演示站点</a></h1>
+            <h2 class="site-description">一夜西风！吹落多少星雨</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%88%86%E7%B1%BB/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E6%90%9C%E7%B4%A2/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/html/" >
+                html
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%85%83%E7%B4%A0/">第三节 元素</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 23, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="元素element">元素（element）</h2>
+<blockquote>
+<p>其他叫法:标签,标记</p>
+</blockquote>
+<ul>
+<li>元素的字母都应该小写，除了文档声明可以用大写字母。</li>
+</ul>
+<h4 id="元素的分类">元素的分类：</h4>
+<ul>
+<li>父元素</li>
+<li>子元素</li>
+<li>祖先元素</li>
+<li>后代元素</li>
+<li>兄弟元素（拥有同一个父元素的俩个元素）</li>
+</ul>
+<h4 id="元素的构成">元素的构成</h4>
+<p><strong>元素</strong>=<strong>起始标记</strong>（begin tag）+<strong>结束标记</strong>（end tag）+<strong>元素内容</strong>+<strong>元素属性</strong></p>
+<h4 id="元素的缺失">元素的缺失</h4>
+<ul>
+<li>有些元素没有结束标记这样的元素叫做 <strong>“空元素”</strong>，我称之为<strong>单元素</strong>如：<code>&lt;meta&gt;，&lt;img&gt;</code>等</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>有些元素也缺乏<strong>元素属性</strong>和<strong>元素内容</strong>：如<code>&lt;br&gt;</code>等</li>
+</ul>
+<h4 id="span-stylecolor-ff0000元素的嵌套span"><!-- raw HTML omitted -->元素的嵌套：<!-- raw HTML omitted --></h4>
+<ul>
+<li>元素可以嵌套，但是不能相互嵌套。</li>
+</ul>
+<h2 id="一些常用的元素">一些常用的元素</h2>
+<h3 id="链接元素">链接元素</h3>
+<h4 id="a元素-超链接">a元素 <strong><code>超链接</code></strong></h4>
+<h6 id="href属性hyper-reference-超级参考引用通常表示跳转地址">href属性：hyper reference （超级参考，引用）：通常表示跳转地址</h6>
+<ol>
+<li>
+<p>普通链接
+``</p>
+</li>
+<li>
+<p>锚链接：表示跳转某个锚点
+``</p>
+<ul>
+<li>目录代码写法：<code>a[href=&quot;#lianjie$&quot;]*6&gt;{章节$</code></li>
+<li>章节代码写法：<code>((h2[id=&quot;lianjie$&quot;]&gt;{章节$})+p&gt;lorem1000)*6</code>
+<ul>
+<li><strong>$</strong> 表示占位符，数字递增</li>
+<li><strong>Lorem</strong> 表示英文的假文乱字，1000表示有1000个乱字假文</li>
+<li><strong>+</strong> 表示兄弟</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>功能链接：点击以后触发某个功能。
+``</p>
+<ul>
+<li>执行js代码 <strong>javascript:</strong></li>
+<li>发送邮件 <strong>malito：</strong> 要求用户计算机上安装有邮件发送软件，如exchange</li>
+<li>拨打电话 <strong>tel：</strong> 要求用户计算机上安装拨号软件，或者使用移动端。</li>
+</ul>
+</li>
+</ol>
+<h6 id="target属性">target属性</h6>
+<ul>
+<li><strong>表示跳转窗口位置</strong></li>
+</ul>
+<p>target的取值：</p>
+<ol>
+<li><em>_self</em>* 在当前页面窗口打开（默认值）</li>
+<li><em>_blank</em>* 在新页面打开，不覆盖当前页面。</li>
+</ol>
+<h6 id="title属性全局属性">title属性（全局属性）</h6>
+<p><strong>鼠标停留，显示一个完整的描述</strong>。</p>
+<h3 id="表格元素">表格元素</h3>
+<h4 id="table元素httpswwww3schoolcomcntagstag_tableasp--表格"><a class="link" href="https://www.w3school.com.cn/tags/tag_table.asp"  target="_blank" rel="noopener"
+    >table元素</a>  <code>表格</code></h4>
+<ul>
+<li><code>caption</code> 标题</li>
+<li><code>th</code> 表头</li>
+<li><code>tr</code> 行</li>
+<li><code>td</code> 列</li>
+<li><code>colspan</code> 跨行；</li>
+<li><code>rowspan</code> 跨列</li>
+</ul>
+<h4 id="lihttpsdevelopermozillaorgzh-cndocswebhtmlelementli-列表条目元素"><a class="link" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/li"  target="_blank" rel="noopener"
+    >li</a> 列表条目元素</h4>
+<blockquote>
+<p>列表元素本身就是一个块,可以直接设置宽和高。也可以在<code>li</code>元素中间套<code>a</code>元素，再将a元素转化为块，设置宽和高</p>
+</blockquote>
+<h4 id="heading"></h4>
+<ol>
+<li><code>ol</code> 有序列表</li>
+<li><code>ul</code> 无序列表</li>
+<li><code>menu</code> 菜单</li>
+</ol>
+<h6 id="value属性全局属性">value属性（全局属性）</h6>
+<p>这个整数型属性表明了本 <code>&lt;li&gt;</code> 元素在有序列表（由 <code>&lt;ol&gt;</code> 元素定义）中的序号。本属性值只能用数字，即使列表使用罗马数字或字母来展示。随后的列表条目会从设置的值开始计数。value 属性对于无序列表 <code>(&lt;ul&gt;) </code>或者菜单<code>(&lt;menu&gt;)</code>无效。</p>
+<h6 id="type属性本属性已废弃使用-csslist-style-type-属性来代替">type属性（本属性已废弃：使用 <code>CSS：list-style-type</code> 属性来代替。）</h6>
+<ul>
+<li>这个字符型属性表明了数字的类型：
+a: 小写字母
+A: 大写字母
+i: 小写罗马数字
+I: 大写罗马数字
+1: 数字
+本属性值将覆盖 <code>&lt;ol&gt;</code> 元素中的同名属性值（若存在）。</li>
+</ul>
+<h2 id="p元素-段落">P元素 <code>段落</code></h2>
+<h2 id="src属性样式">src属性样式</h2>
+<ol>
+<li>图片链接:<code>img元素</code>
+<ul>
+<li><code>&lt;img src=&quot;url或路径&quot;&gt;</code></li>
+</ul>
+</li>
+<li>音乐链接：<code>audio元素</code></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">	方案1：
+</span></span><span class="line"><span class="cl">		&lt;audio controls src=&#34;.mp3&#34;&gt;&lt;/audio&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	方案2：
+</span></span><span class="line"><span class="cl">		&lt;audio controls&gt;
+</span></span><span class="line"><span class="cl">			&lt;source src=&#34;.mp3&#34;&gt;
+</span></span><span class="line"><span class="cl">		&lt;/audio&gt;	
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>视频链接：<code>video元素</code></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">方案2：
+</span></span><span class="line"><span class="cl">	&lt;video controls &gt;
+</span></span><span class="line"><span class="cl">    &lt;source src=&#34;.mp4&#34;&gt;
+</span></span><span class="line"><span class="cl">	&lt;/video&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>controls:按钮；loop循环播放；autoplay自动播放（html5被禁止，不能用）
+width:宽</p>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>橘子泡酒</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-contents--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-contents">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E5%85%A8%E5%B1%80%E5%B1%9E%E6%80%A7%E5%92%8C%E5%85%A8%E5%B1%80%E5%85%83%E7%B4%A0/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">全局属性和全局元素</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="">
+    <a href="/p/%E7%AC%AC%E4%B8%80%E8%8A%82-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">第一节 基本的认识</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="">
+    <a href="/p/%E7%AC%AC%E4%BA%8C%E8%8A%82-%E8%AF%AD%E4%B9%89%E5%8C%96/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">第二节 语义化</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="">
+    <a href="/p/%E7%AC%AC%E5%9B%9B%E8%8A%82-%E8%B7%AF%E5%BE%84%E7%9A%84%E5%86%99%E6%B3%95/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">第四节 路径的写法</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="">
+    <a href="/p/%E7%AC%AC%E4%BA%94%E8%8A%82-%E6%A0%B7%E5%BC%8F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">第五节 样式</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 演示站点
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.11.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#元素element">元素（element）</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#元素的分类">元素的分类：</a></li>
+            <li><a href="#元素的构成">元素的构成</a></li>
+            <li><a href="#元素的缺失">元素的缺失</a></li>
+            <li><a href="#span-stylecolor-ff0000元素的嵌套span"><!-- raw HTML omitted -->元素的嵌套：<!-- raw HTML omitted --></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#一些常用的元素">一些常用的元素</a>
+      <ol>
+        <li><a href="#链接元素">链接元素</a>
+          <ol>
+            <li><a href="#a元素-超链接">a元素 <strong><code>超链接</code></strong></a></li>
+          </ol>
+        </li>
+        <li><a href="#表格元素">表格元素</a>
+          <ol>
+            <li><a href="#table元素httpswwww3schoolcomcntagstag_tableasp--表格"><a href="https://www.w3school.com.cn/tags/tag_table.asp">table元素</a>  <code>表格</code></a></li>
+            <li><a href="#lihttpsdevelopermozillaorgzh-cndocswebhtmlelementli-列表条目元素"><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/li">li</a> 列表条目元素</a></li>
+            <li><a href="#heading"></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#p元素-段落">P元素 <code>段落</code></a></li>
+    <li><a href="#src属性样式">src属性样式</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

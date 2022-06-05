@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>演示站点</title>
+        <link>https://example.com/</link>
+        <description>Recent content on 演示站点</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 23 May 2022 22:32:42 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第二节 语义化</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%BA%8C%E8%8A%82-%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%BA%8C%E8%8A%82-%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
+        <description>&lt;h2 id=&#34;什么是语义化&#34;&gt;什么是语义化&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;每一个HTML元素都有具体的含义&lt;/li&gt;
+&lt;li&gt;所有元素与展示效果无关，元素展示到页面的效果应该与css有关；因为浏览器自带默认的css样式，所以每个元素都有默认的样式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;重要：选择什么元素，取决于内容的含义，而不是显示出来的效果。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;为什么需要语义化&#34;&gt;为什么需要语义化&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;为了搜索引擎的优化（SEO） 每隔一段时间搜索引擎就会从互联网中抓取页面源代码&lt;/li&gt;
+&lt;li&gt;为了浏览器理解网页&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;文本元素&#34;&gt;文本元素&lt;/h1&gt;
+&lt;p&gt;HTML中支持的元素：html元素周期表&lt;/p&gt;
+&lt;h2 id=&#34;h元素&#34;&gt;h元素&lt;/h2&gt;
+&lt;p&gt;标题：head&lt;/p&gt;
+&lt;p&gt;h1~h6：表示一级标签到六级标题&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;h$&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;$级标题&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;表示占位符&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;p元素&#34;&gt;p元素&lt;/h2&gt;
+&lt;p&gt;段落：paragraph&lt;/p&gt;
+&lt;h2 id=&#34;span&#34;&gt;span&lt;/h2&gt;
+&lt;p&gt;没有语义，仅用于设置样式，充当容器&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;某些元素会独占一行，某些元素不会。在以前独占一行的叫 “块级元素”，不会独占一行的叫 “行级元素”。现在在HTML5中已经废除这种说法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;pre&#34;&gt;pre&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;预格式化文本元素&lt;/strong&gt;,通常用于在网页中显示一些代码。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;空白折叠：在源代码中连续的空白字符（空格，换行，制表），在页面显示时会被折叠为一个空格。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在pre元素内部出现的内容，会按源代码的格式显示到页面上，不会再出现空白折叠。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pre元素在显示代码的时候通常会在外面套一个code元素。code元素表示代码区域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;pre元素功能的本质是：它有一个默认的css样式。所以按逻辑来讲它也是一个无语义元素。&lt;/p&gt;
+&lt;h1 id=&#34;html实体&#34;&gt;HTML实体&lt;/h1&gt;
+&lt;p&gt;实体字符：HTML Entity&lt;/p&gt;
+&lt;p&gt;实体字符通常用于&lt;strong&gt;在页面中显示一些特殊符号&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;通常的写法有： &lt;strong&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;单词;&lt;/strong&gt; 和 &lt;strong&gt;&lt;code&gt;&amp;amp;#&lt;/code&gt; 数字;&lt;/strong&gt; 俩种写法。&lt;/p&gt;
+&lt;p&gt;(&lt;strong&gt;分号要用英文&lt;/strong&gt;，写法一般用第一种，数字难记。)&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;HTML 原代码&lt;/th&gt;
+&lt;th&gt;显示结果&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;lt&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;小于号或显示标记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;gt&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;&amp;gt;&lt;/td&gt;
+&lt;td&gt;大于号或显示标记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;amp&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;&amp;amp;&lt;/td&gt;
+&lt;td&gt;可用于显示其它特殊字符&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;quot&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;“&lt;/td&gt;
+&lt;td&gt;引号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;reg&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;®&lt;/td&gt;
+&lt;td&gt;已注册&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;copy&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;©&lt;/td&gt;
+&lt;td&gt;版权&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;trade&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;™&lt;/td&gt;
+&lt;td&gt;商标&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;yun&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;¥&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;bull&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;•&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;ensp&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt; &lt;/td&gt;
+&lt;td&gt;半个空白位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;emsp&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt; &lt;/td&gt;
+&lt;td&gt;一个空白位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;amp;nbsp&lt;/code&gt;;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;不断行的空白（ (non- breaking space 非断裂空间)）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;small&#34;&gt;small&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>第二章 一些基本属性</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7/</guid>
+        <description>&lt;h2 id=&#34;文本和文字&#34;&gt;文本和文字&lt;/h2&gt;
+&lt;h4 id=&#34;颜色color&#34;&gt;颜色：color&lt;/h4&gt;
+&lt;h3 id=&#34;文本属性&#34;&gt;文本属性&lt;/h3&gt;
+&lt;h4 id=&#34;text-alignhttpsdevelopermozillaorgzh-cndocswebcsstext-align&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-align&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;text-align&lt;/a&gt;：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;定义行内内容（例如文字）如何相对它的块父元素对齐。并不控制块元素自己的对齐，只控制它的行内内容的对齐。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;text-decoration定义文本样式&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;text-decoration&lt;/a&gt;：定义文本样式&lt;/h4&gt;
+&lt;h3 id=&#34;文字属性&#34;&gt;文字属性&lt;/h3&gt;
+&lt;h4 id=&#34;font-size更改文字大小&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;font-size&lt;/a&gt;：更改文字大小&lt;/h4&gt;
+&lt;h2 id=&#34;网格属性grid&#34;&gt;网格属性：&lt;code&gt;grid&lt;/code&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;网格模板&#34;&gt;网格模板：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网格模板列&#34;&gt;网格模板列：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-columns&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网格模板行&#34;&gt;网格模板行：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网格模板领域httpsdevelopermozillaorgzh-cndocswebcssgrid-template-areas&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid-template-areas&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网格模板领域&lt;/a&gt;：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-areas&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;网格自动流httpsdevelopermozillaorgzh-cndocswebcssgrid-auto-flow&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid-auto-flow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网格自动流&lt;/a&gt;：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-auto-flow&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;边框属性&#34;&gt;边框属性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;边框属性的三种取值（适用外边框和内边框）：
+&lt;ul&gt;
+&lt;li&gt;上下，左右&lt;/li&gt;
+&lt;li&gt;上，左右，下&lt;/li&gt;
+&lt;li&gt;上，左，下，右&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;边框边界&#34;&gt;边框（边界）&lt;/h3&gt;
+&lt;h4 id=&#34;border-radiushttpsdevelopermozillaorgzh-cndocswebcssborder-radius边界半径&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-radius&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;border-radius&lt;/a&gt;：边界半径&lt;/h4&gt;
+&lt;h3 id=&#34;外边框httpsdevelopermozillaorgzh-cndocswebcssmargin-margin&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;外边框&lt;/a&gt;： &lt;code&gt;margin&lt;/code&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;顶部外边距margin-top-&#34;&gt;顶部外边距：&lt;code&gt;margin-top &lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;底部外边距margin-bottom&#34;&gt;底部外边距：&lt;code&gt;margin-bottom&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;左外边距margin-left&#34;&gt;左外边距：&lt;code&gt;margin-left&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;右外边距margin-right&#34;&gt;右外边距：&lt;code&gt;margin-right&lt;/code&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;内边框&#34;&gt;内边框&lt;/h3&gt;
+&lt;h2 id=&#34;其他属性&#34;&gt;其他属性&lt;/h2&gt;
+&lt;h4 id=&#34;漂浮float&#34;&gt;漂浮：float&lt;/h4&gt;
+&lt;h4 id=&#34;展示display&#34;&gt;展示：display&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;设置元素的内部和外部显示类型 &lt;code&gt;display types&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;元素的外部显示类型 &lt;code&gt;outer display types&lt;/code&gt; 将决定该元素在流式布局中的表现（块级或内联元素）；&lt;/li&gt;
+&lt;li&gt;元素的内部显示类型 &lt;code&gt;inner display types&lt;/code&gt; 可以控制其子元素的布局（例如：flow layout，grid 或 flex）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;差距间距gap&#34;&gt;差距，间距：gap&lt;/h4&gt;
+</description>
+        </item>
+        <item>
+        <title>第三节 元素</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%85%83%E7%B4%A0/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%B8%89%E8%8A%82-%E5%85%83%E7%B4%A0/</guid>
+        <description>&lt;h2 id=&#34;元素element&#34;&gt;元素（element）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其他叫法:标签,标记&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;元素的字母都应该小写，除了文档声明可以用大写字母。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;元素的分类&#34;&gt;元素的分类：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;父元素&lt;/li&gt;
+&lt;li&gt;子元素&lt;/li&gt;
+&lt;li&gt;祖先元素&lt;/li&gt;
+&lt;li&gt;后代元素&lt;/li&gt;
+&lt;li&gt;兄弟元素（拥有同一个父元素的俩个元素）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;元素的构成&#34;&gt;元素的构成&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;元素&lt;/strong&gt;=&lt;strong&gt;起始标记&lt;/strong&gt;（begin tag）+&lt;strong&gt;结束标记&lt;/strong&gt;（end tag）+&lt;strong&gt;元素内容&lt;/strong&gt;+&lt;strong&gt;元素属性&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;元素的缺失&#34;&gt;元素的缺失&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;有些元素没有结束标记这样的元素叫做 &lt;strong&gt;“空元素”&lt;/strong&gt;，我称之为&lt;strong&gt;单元素&lt;/strong&gt;如：&lt;code&gt;&amp;lt;meta&amp;gt;，&amp;lt;img&amp;gt;&lt;/code&gt;等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;有些元素也缺乏&lt;strong&gt;元素属性&lt;/strong&gt;和&lt;strong&gt;元素内容&lt;/strong&gt;：如&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;span-stylecolor-ff0000元素的嵌套span&#34;&gt;&lt;!-- raw HTML omitted --&gt;元素的嵌套：&lt;!-- raw HTML omitted --&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;元素可以嵌套，但是不能相互嵌套。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;一些常用的元素&#34;&gt;一些常用的元素&lt;/h2&gt;
+&lt;h3 id=&#34;链接元素&#34;&gt;链接元素&lt;/h3&gt;
+&lt;h4 id=&#34;a元素-超链接&#34;&gt;a元素 &lt;strong&gt;&lt;code&gt;超链接&lt;/code&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;h6 id=&#34;href属性hyper-reference-超级参考引用通常表示跳转地址&#34;&gt;href属性：hyper reference （超级参考，引用）：通常表示跳转地址&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;普通链接
+``&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;锚链接：表示跳转某个锚点
+``&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目录代码写法：&lt;code&gt;a[href=&amp;quot;#lianjie$&amp;quot;]*6&amp;gt;{章节$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;章节代码写法：&lt;code&gt;((h2[id=&amp;quot;lianjie$&amp;quot;]&amp;gt;{章节$})+p&amp;gt;lorem1000)*6&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;$&lt;/strong&gt; 表示占位符，数字递增&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lorem&lt;/strong&gt; 表示英文的假文乱字，1000表示有1000个乱字假文&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;+&lt;/strong&gt; 表示兄弟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;功能链接：点击以后触发某个功能。
+``&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;执行js代码 &lt;strong&gt;javascript:&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;发送邮件 &lt;strong&gt;malito：&lt;/strong&gt; 要求用户计算机上安装有邮件发送软件，如exchange&lt;/li&gt;
+&lt;li&gt;拨打电话 &lt;strong&gt;tel：&lt;/strong&gt; 要求用户计算机上安装拨号软件，或者使用移动端。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;target属性&#34;&gt;target属性&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;表示跳转窗口位置&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;target的取值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;_self&lt;/em&gt;* 在当前页面窗口打开（默认值）&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;_blank&lt;/em&gt;* 在新页面打开，不覆盖当前页面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;title属性全局属性&#34;&gt;title属性（全局属性）&lt;/h6&gt;
+&lt;p&gt;&lt;strong&gt;鼠标停留，显示一个完整的描述&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;表格元素&#34;&gt;表格元素&lt;/h3&gt;
+&lt;h4 id=&#34;table元素httpswwww3schoolcomcntagstag_tableasp--表格&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.w3school.com.cn/tags/tag_table.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;table元素&lt;/a&gt;  &lt;code&gt;表格&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;caption&lt;/code&gt; 标题&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;th&lt;/code&gt; 表头&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tr&lt;/code&gt; 行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;td&lt;/code&gt; 列&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;colspan&lt;/code&gt; 跨行；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rowspan&lt;/code&gt; 跨列&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;lihttpsdevelopermozillaorgzh-cndocswebhtmlelementli-列表条目元素&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/li&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;li&lt;/a&gt; 列表条目元素&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;列表元素本身就是一个块,可以直接设置宽和高。也可以在&lt;code&gt;li&lt;/code&gt;元素中间套&lt;code&gt;a&lt;/code&gt;元素，再将a元素转化为块，设置宽和高&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;heading&#34;&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;ol&lt;/code&gt; 有序列表&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ul&lt;/code&gt; 无序列表&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menu&lt;/code&gt; 菜单&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;value属性全局属性&#34;&gt;value属性（全局属性）&lt;/h6&gt;
+&lt;p&gt;这个整数型属性表明了本 &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; 元素在有序列表（由 &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; 元素定义）中的序号。本属性值只能用数字，即使列表使用罗马数字或字母来展示。随后的列表条目会从设置的值开始计数。value 属性对于无序列表 &lt;code&gt;(&amp;lt;ul&amp;gt;) &lt;/code&gt;或者菜单&lt;code&gt;(&amp;lt;menu&amp;gt;)&lt;/code&gt;无效。&lt;/p&gt;
+&lt;h6 id=&#34;type属性本属性已废弃使用-csslist-style-type-属性来代替&#34;&gt;type属性（本属性已废弃：使用 &lt;code&gt;CSS：list-style-type&lt;/code&gt; 属性来代替。）&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;这个字符型属性表明了数字的类型：
+a: 小写字母
+A: 大写字母
+i: 小写罗马数字
+I: 大写罗马数字
+1: 数字
+本属性值将覆盖 &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt; 元素中的同名属性值（若存在）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;p元素-段落&#34;&gt;P元素 &lt;code&gt;段落&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;src属性样式&#34;&gt;src属性样式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;图片链接:&lt;code&gt;img元素&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;url或路径&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;音乐链接：&lt;code&gt;audio元素&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	方案1：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&amp;lt;audio controls src=&amp;#34;.mp3&amp;#34;&amp;gt;&amp;lt;/audio&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	方案2：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&amp;lt;audio controls&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			&amp;lt;source src=&amp;#34;.mp3&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&amp;lt;/audio&amp;gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;视频链接：&lt;code&gt;video元素&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;方案2：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&amp;lt;video controls &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;source src=&amp;#34;.mp4&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&amp;lt;/video&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;controls:按钮；loop循环播放；autoplay自动播放（html5被禁止，不能用）
+width:宽&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>第四节 路径的写法</title>
+        <link>https://example.com/p/%E7%AC%AC%E5%9B%9B%E8%8A%82-%E8%B7%AF%E5%BE%84%E7%9A%84%E5%86%99%E6%B3%95/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E5%9B%9B%E8%8A%82-%E8%B7%AF%E5%BE%84%E7%9A%84%E5%86%99%E6%B3%95/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Learn/Common_questions/What_is_a_URL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;URL(路径)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;站内资源以及站外资源&#34;&gt;站内资源以及站外资源&lt;/h2&gt;
+&lt;p&gt;站内资源（相对路径，绝对路径）:当前网站内的资源&lt;/p&gt;
+&lt;p&gt;站外资源（绝对路径）:非当前网站内的资源&lt;/p&gt;
+&lt;h2 id=&#34;相对路径和绝对路径&#34;&gt;相对路径和绝对路径&lt;/h2&gt;
+&lt;h3 id=&#34;相对路径相对于当前文件位置的路径&#34;&gt;相对路径：相对于当前文件位置的路径。&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;优点：位置灵活，写法简单，只要在同盘中就可引用查找&lt;/li&gt;
+&lt;li&gt;相对路径书写格式:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假如有A,B,C三个文件夹，其中B是当前打开的文件夹。A文件夹包含B文件夹，B包含c文件夹。所以A是B父文件夹，C是B的子文件夹&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1. 引用上级目录：../文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2. 引用同级目录:文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3. 引用下级目录:父文件夹/文件
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;上级目录：在当前文件夹上的父文件夹中的文件,A是B的上级目录 在html中&lt;code&gt;..&lt;/code&gt;表示返回上级&lt;/li&gt;
+&lt;li&gt;同级目录：与当前文件同文件夹的文件，B是当前文件夹&lt;/li&gt;
+&lt;li&gt;下级目录：在当前文件夹下的子文件夹中的文件，C是B的下级目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当主机名相同时可以省略主机名 当端口号相同时，可以省略端口号。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;绝对路径目标文件在硬盘上的真实路径最精确路径&#34;&gt;绝对路径：目标文件在硬盘上的真实路径（最精确路径）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;绝对路径书写格式:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;协议名://主机名:端口号/路径
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;schema://host:port/path
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;协议名：http，https，file&lt;/li&gt;
+&lt;li&gt;主机名：域名，ip地址&lt;/li&gt;
+&lt;li&gt;端口号：如果协议是http，默认端口是80；如果是htpps协议，默认端口是443&lt;/li&gt;
+&lt;li&gt;路径：每个网站的路径都是唯一的，它表示页面的具体所在位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当跳转的目标和当前页面的协议相同时，可以省略协议。 默认端口号一般不显示&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>第一节 基本的认识</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%B8%80%E8%8A%82-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%B8%80%E8%8A%82-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/</guid>
+        <description>&lt;h2 id=&#34;注释&#34;&gt;注释&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;为阅读者提供帮助&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在html中，注释使用格式如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- 注释类容 --&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;html的主体部分&#34;&gt;HTML的主体部分&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zh_CN&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;http-equiv&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;X-UA-Compatible&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;IE=edge&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;标准的文档结构&#34;&gt;标准的文档结构&lt;/h4&gt;
+&lt;p&gt;HTML:页面，HTML文档&lt;/p&gt;
+&lt;h4 id=&#34;标准网页声明&#34;&gt;标准网页声明：&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;告诉浏览器当前文档使用的HTML标准是HTML5，一个页面对多只能有一个。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;如果不写文档声明，可能会导致浏览器进入怪异渲染模式。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;根元素&#34;&gt;根元素：&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zh_CN&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;一个页面最多只能有一个，并且&lt;strong&gt;该元素是其他元素的父元素或者祖先元素&lt;/strong&gt;，HTML5中没有强制要求书写该元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;lang属性&lt;/strong&gt;：language（语言）&lt;code&gt;全局属性&lt;/code&gt;，表示该元素的内部的文字是使用哪一种自然语言书写的。（“cmn-hans”中文简体的表达意思，“zn-cn”也可以识别，但是过时了。）&lt;/p&gt;
+&lt;h3 id=&#34;文档头&#34;&gt;文档头：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;文档头内部的内容不会显示到页面上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;元素的元数据附加信息&#34;&gt;元素的元数据：附加信息&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;charset：指定网页内容编码&lt;/li&gt;
+&lt;li&gt;UTF-8:是Unicode编码的一个版本（国际通用字符集）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;适配到移动端&#34;&gt;适配到移动端:&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;告诉浏览器使用的内核是什么&#34;&gt;告诉浏览器使用的内核是什么：&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;http-equiv&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;X-UA-Compatible&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;IE=edge&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h5 id=&#34;网页的标题&#34;&gt;网页的标题：&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;GTLX&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;文档体&#34;&gt;文档体：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;页面上显示的元素都应该放在文档体中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;元素学习技巧类前端html第三节20元素md&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;../../../../%e5%ad%a6%e4%b9%a0/%e6%8a%80%e5%b7%a7%e7%b1%bb/%e5%89%8d%e7%ab%af/HTML/%e7%ac%ac%e4%b8%89%e8%8a%82%20%e5%85%83%e7%b4%a0.md&#34; &gt;元素&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;属性&#34;&gt;属性&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;属性&lt;/strong&gt;=&lt;strong&gt;属性名&lt;/strong&gt;+&lt;strong&gt;属性值&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt; &lt;strong&gt;属性的分类:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;局部属性：某些元素特有的属性&lt;/li&gt;
+&lt;li&gt;全局属性：所有元素通用的属性&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>第一章 基本的认识</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/</guid>
+        <description>&lt;h2 id=&#34;css层叠样式表httpswwww3schoolcomcncssrefcss_animatableasp&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.w3school.com.cn/cssref/css_animatable.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CSS层叠样式表&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.w3cschool.cn/css/css-style.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;w3c中文站&lt;/a&gt;
+声明：&lt;code&gt;@charset &amp;quot;utf-8&amp;quot; ;&lt;/code&gt;
+注释：&lt;code&gt;/* 我是注释 */&lt;/code&gt;
+&lt;code&gt;class&lt;/code&gt;对应的是&lt;code&gt;.&lt;/code&gt;
+&lt;code&gt;ID&lt;/code&gt;对应的是&lt;code&gt;#&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;选择器&#34;&gt;选择器&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;在HTML中的表达&lt;/th&gt;
+&lt;th&gt;在css中的表达&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS 元素选择器&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;根据元素名称来选择 HTML 元素。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;元素id选择器&lt;/td&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;使用 HTML 元素的 id 属性来选择特定元素。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS类选择器&lt;/td&gt;
+&lt;td&gt;class&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选择有特定 class 属性的 HTML 元素。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS 通用选择器&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选择html中的所有元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HTML 元素也可以引用多个类。
+类名不能以数字开头！
+选择器后面不用写分号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;组合器&#34;&gt;组合器&lt;/h2&gt;
+&lt;h4 id=&#34;后代选择器-空格&#34;&gt;后代选择器 (空格)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;后代选择器匹配属于指定元素后代的所有元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;子选择器-&#34;&gt;子选择器 (&lt;code&gt;&amp;gt;&lt;/code&gt;)&lt;/h4&gt;
+&lt;p&gt;子选择器匹配属于指定元素子元素的所有元素。&lt;/p&gt;
+&lt;h4 id=&#34;相邻兄弟选择器-&#34;&gt;相邻兄弟选择器 (&lt;code&gt;+&lt;/code&gt;)&lt;/h4&gt;
+&lt;p&gt;相邻兄弟选择器匹配所有作为指定元素的相邻同级的元素。
+兄弟（同级）元素必须具有相同的父元素，“相邻”的意思是“紧随其后”。&lt;/p&gt;
+&lt;h4 id=&#34;通用兄弟选择器&#34;&gt;通用兄弟选择器(&lt;code&gt;~&lt;/code&gt;)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;通用兄弟选择器匹配属于指定元素的同级元素的所有元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;写法&#34;&gt;写法&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;在css中的写法&lt;/th&gt;
+&lt;th&gt;在HTML中的写法&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;text-align: center; &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;align=&amp;quot;center&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;文档的居中&lt;/td&gt;
+&lt;td&gt;孤证不立&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;width:200px;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;width=&amp;quot;200px&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;宽度200像素&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;heigh&lt;/strong&gt; 高度同理&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>全局属性和全局元素</title>
+        <link>https://example.com/p/%E5%85%A8%E5%B1%80%E5%B1%9E%E6%80%A7%E5%92%8C%E5%85%A8%E5%B1%80%E5%85%83%E7%B4%A0/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E5%85%A8%E5%B1%80%E5%B1%9E%E6%80%A7%E5%92%8C%E5%85%A8%E5%B1%80%E5%85%83%E7%B4%A0/</guid>
+        <description>&lt;h1 id=&#34;全局属性&#34;&gt;全局属性&lt;/h1&gt;
+&lt;h2 id=&#34;title属性&#34;&gt;title属性&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;鼠标停留，显示一个完整的描述&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;文本类的全局元素&#34;&gt;文本类的全局元素&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;（单元素） 表示换行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; 表示文本十分重要，一般用粗体显示。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;id&amp;gt;&lt;/code&gt; 表示元素在文档中的唯一编号&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;width&amp;gt;&lt;/code&gt; 表示图片高，后面接&lt;code&gt;px&lt;/code&gt;像素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;style-全局属性httpsdevelopermozillaorgzh-cndocswebhtmlglobal_attributesstyle样式声明&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/style&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;style 全局属性&lt;/a&gt;:样式声明&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在&lt;code&gt;css&lt;/code&gt;中style属性可以省略不用写&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;对齐与浮动&#34;&gt;对齐与浮动&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;text-align&lt;/code&gt; 文本对齐方式；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fioat &lt;/code&gt;浮动
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;left&lt;/code&gt; 左对齐&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;center&lt;/code&gt; 居中对齐(依据上级元素)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;right&lt;/code&gt; 右对齐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;style=&amp;quot;text-align:left&amp;quot;&amp;gt;&lt;/code&gt; 左对齐
+&lt;code&gt;&amp;lt;style=&amp;quot;fioat:left&amp;quot;&amp;gt;&lt;/code&gt; 左浮动&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;linc-hcight-段落间距&#34;&gt;&lt;code&gt;linc-hcight&lt;/code&gt; 段落间距&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;后面接数值&lt;/strong&gt; &lt;code&gt;&amp;lt;style=“linc-hcight:1.0”&amp;gt; &lt;/code&gt;# img元素&lt;/p&gt;
+&lt;h1 id=&#34;全局元素&#34;&gt;全局元素&lt;/h1&gt;
+&lt;h2 id=&#34;div-表示内容划分元素&#34;&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; 表示内容划分元素&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;align&lt;/code&gt;属性：align 属性规定 div 元素中的内容的水平对齐方式。 所有浏览器都支持 align 属性。 在 HTML 4.01 中，不赞成使用 div 元素的 align 属性；在 XHTML 1.0 Strict DTD 中，不支持 div 元素的 align 属性。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>总结</title>
+        <link>https://example.com/p/%E6%80%BB%E7%BB%93/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E6%80%BB%E7%BB%93/</guid>
+        <description>&lt;h2 id=&#34;经验总结&#34;&gt;经验总结&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;给框
+&lt;ul&gt;
+&lt;li&gt;也就是高度和宽度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注意给浮动
+&lt;ul&gt;
+&lt;li&gt;不给可能会挤出边框，或者无法正常显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注意结束标记的存放位置
+&lt;ul&gt;
+&lt;li&gt;有的元素是包含关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;一些技巧&#34;&gt;一些技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;a元素可以用color（颜色）和text-decoration（文本样式），定义颜色和去除下划线&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>分类</title>
+        <link>https://example.com/%E5%88%86%E7%B1%BB/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/%E5%88%86%E7%B1%BB/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title>关于</title>
+        <link>https://example.com/%E5%85%B3%E4%BA%8E/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://example.com/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;index.md&lt;/code&gt;文件可以用&lt;code&gt;index.zh-cn.md&lt;/code&gt;代替
+&lt;ul&gt;
+&lt;li&gt;前提是博客主题语言选择zh-cn&lt;/li&gt;
+&lt;li&gt;主体语言选着什么就可以改成什么，若主体语言为英文可以不用写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;文件内的代码表示：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;title：界面显示的名字&lt;/li&gt;
+&lt;li&gt;slug：鼠标移到上面显示的名字&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>第五节 样式</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%BA%94%E8%8A%82-%E6%A0%B7%E5%BC%8F/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%BA%94%E8%8A%82-%E6%A0%B7%E5%BC%8F/</guid>
+        <description>&lt;h2 id=&#34;总说&#34;&gt;总说&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;行内式：存放在文档体的行内
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;p style=&amp;quot;color: brown;&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;内部样式：放在文档头
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &amp;lt;style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; p{ color: aquamarine;}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;外部样式：存放在外部同级文件夹
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1.&amp;lt;style type=&amp;#34;text/css&amp;#34; &amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; @import url(&amp;#34;CSS.css&amp;#34;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2.&amp;lt;link href=&amp;#34;CSS.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;优先级就近原则行内内部外部&#34;&gt;优先级(就近原则)：行内&amp;gt;内部&amp;gt;外部&lt;/h4&gt;
+&lt;h4 id=&#34;元素的代替&#34;&gt;元素的代替&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;calss&lt;/code&gt;——&amp;gt; &lt;code&gt;.&lt;/code&gt;
+&lt;code&gt;id&lt;/code&gt;——&amp;gt; &lt;code&gt;#&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;link元素httpsdevelopermozillaorgzh-cndocswebhtmlelementlink外部资源链接元素&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;link元素&lt;/a&gt;:外部资源链接元素&lt;/h2&gt;
+&lt;h4 id=&#34;href&#34;&gt;href&lt;/h4&gt;
+&lt;h4 id=&#34;rel&#34;&gt;rel&lt;/h4&gt;
+</description>
+        </item>
+        <item>
+        <title>链接</title>
+        <link>https://example.com/%E9%93%BE%E6%8E%A5/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/%E9%93%BE%E6%8E%A5/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://example.com/%E6%90%9C%E7%B4%A2/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/%E6%90%9C%E7%B4%A2/</guid>
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

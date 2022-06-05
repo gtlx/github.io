@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>css on 演示站点</title>
+        <link>https://example.com/categories/css/</link>
+        <description>Recent content in css on 演示站点</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 23 May 2022 22:32:42 +0800</lastBuildDate><atom:link href="https://example.com/categories/css/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>第二章 一些基本属性</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7/</guid>
+        <description>&lt;h2 id=&#34;文本和文字&#34;&gt;文本和文字&lt;/h2&gt;
+&lt;h4 id=&#34;颜色color&#34;&gt;颜色：color&lt;/h4&gt;
+&lt;h3 id=&#34;文本属性&#34;&gt;文本属性&lt;/h3&gt;
+&lt;h4 id=&#34;text-alignhttpsdevelopermozillaorgzh-cndocswebcsstext-align&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-align&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;text-align&lt;/a&gt;：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;定义行内内容（例如文字）如何相对它的块父元素对齐。并不控制块元素自己的对齐，只控制它的行内内容的对齐。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;text-decoration定义文本样式&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;text-decoration&lt;/a&gt;：定义文本样式&lt;/h4&gt;
+&lt;h3 id=&#34;文字属性&#34;&gt;文字属性&lt;/h3&gt;
+&lt;h4 id=&#34;font-size更改文字大小&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;font-size&lt;/a&gt;：更改文字大小&lt;/h4&gt;
+&lt;h2 id=&#34;网格属性grid&#34;&gt;网格属性：&lt;code&gt;grid&lt;/code&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;网格模板&#34;&gt;网格模板：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网格模板列&#34;&gt;网格模板列：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-columns&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网格模板行&#34;&gt;网格模板行：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-rows&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网格模板领域httpsdevelopermozillaorgzh-cndocswebcssgrid-template-areas&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid-template-areas&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网格模板领域&lt;/a&gt;：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-template-areas&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;网格自动流httpsdevelopermozillaorgzh-cndocswebcssgrid-auto-flow&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/grid-auto-flow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网格自动流&lt;/a&gt;：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;grid-auto-flow&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;边框属性&#34;&gt;边框属性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;边框属性的三种取值（适用外边框和内边框）：
+&lt;ul&gt;
+&lt;li&gt;上下，左右&lt;/li&gt;
+&lt;li&gt;上，左右，下&lt;/li&gt;
+&lt;li&gt;上，左，下，右&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;边框边界&#34;&gt;边框（边界）&lt;/h3&gt;
+&lt;h4 id=&#34;border-radiushttpsdevelopermozillaorgzh-cndocswebcssborder-radius边界半径&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-radius&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;border-radius&lt;/a&gt;：边界半径&lt;/h4&gt;
+&lt;h3 id=&#34;外边框httpsdevelopermozillaorgzh-cndocswebcssmargin-margin&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;外边框&lt;/a&gt;： &lt;code&gt;margin&lt;/code&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;顶部外边距margin-top-&#34;&gt;顶部外边距：&lt;code&gt;margin-top &lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;底部外边距margin-bottom&#34;&gt;底部外边距：&lt;code&gt;margin-bottom&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;左外边距margin-left&#34;&gt;左外边距：&lt;code&gt;margin-left&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;右外边距margin-right&#34;&gt;右外边距：&lt;code&gt;margin-right&lt;/code&gt;&lt;/h4&gt;
+&lt;h3 id=&#34;内边框&#34;&gt;内边框&lt;/h3&gt;
+&lt;h2 id=&#34;其他属性&#34;&gt;其他属性&lt;/h2&gt;
+&lt;h4 id=&#34;漂浮float&#34;&gt;漂浮：float&lt;/h4&gt;
+&lt;h4 id=&#34;展示display&#34;&gt;展示：display&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;设置元素的内部和外部显示类型 &lt;code&gt;display types&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;元素的外部显示类型 &lt;code&gt;outer display types&lt;/code&gt; 将决定该元素在流式布局中的表现（块级或内联元素）；&lt;/li&gt;
+&lt;li&gt;元素的内部显示类型 &lt;code&gt;inner display types&lt;/code&gt; 可以控制其子元素的布局（例如：flow layout，grid 或 flex）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;差距间距gap&#34;&gt;差距，间距：gap&lt;/h4&gt;
+</description>
+        </item>
+        <item>
+        <title>第一章 基本的认识</title>
+        <link>https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AE%A4%E8%AF%86/</guid>
+        <description>&lt;h2 id=&#34;css层叠样式表httpswwww3schoolcomcncssrefcss_animatableasp&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.w3school.com.cn/cssref/css_animatable.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CSS层叠样式表&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.w3cschool.cn/css/css-style.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;w3c中文站&lt;/a&gt;
+声明：&lt;code&gt;@charset &amp;quot;utf-8&amp;quot; ;&lt;/code&gt;
+注释：&lt;code&gt;/* 我是注释 */&lt;/code&gt;
+&lt;code&gt;class&lt;/code&gt;对应的是&lt;code&gt;.&lt;/code&gt;
+&lt;code&gt;ID&lt;/code&gt;对应的是&lt;code&gt;#&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;选择器&#34;&gt;选择器&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选择器&lt;/th&gt;
+&lt;th&gt;在HTML中的表达&lt;/th&gt;
+&lt;th&gt;在css中的表达&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS 元素选择器&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;根据元素名称来选择 HTML 元素。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;元素id选择器&lt;/td&gt;
+&lt;td&gt;id&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;#&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;使用 HTML 元素的 id 属性来选择特定元素。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS类选择器&lt;/td&gt;
+&lt;td&gt;class&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选择有特定 class 属性的 HTML 元素。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CSS 通用选择器&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;选择html中的所有元素&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;HTML 元素也可以引用多个类。
+类名不能以数字开头！
+选择器后面不用写分号&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;组合器&#34;&gt;组合器&lt;/h2&gt;
+&lt;h4 id=&#34;后代选择器-空格&#34;&gt;后代选择器 (空格)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;后代选择器匹配属于指定元素后代的所有元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;子选择器-&#34;&gt;子选择器 (&lt;code&gt;&amp;gt;&lt;/code&gt;)&lt;/h4&gt;
+&lt;p&gt;子选择器匹配属于指定元素子元素的所有元素。&lt;/p&gt;
+&lt;h4 id=&#34;相邻兄弟选择器-&#34;&gt;相邻兄弟选择器 (&lt;code&gt;+&lt;/code&gt;)&lt;/h4&gt;
+&lt;p&gt;相邻兄弟选择器匹配所有作为指定元素的相邻同级的元素。
+兄弟（同级）元素必须具有相同的父元素，“相邻”的意思是“紧随其后”。&lt;/p&gt;
+&lt;h4 id=&#34;通用兄弟选择器&#34;&gt;通用兄弟选择器(&lt;code&gt;~&lt;/code&gt;)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;通用兄弟选择器匹配属于指定元素的同级元素的所有元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;写法&#34;&gt;写法&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;在css中的写法&lt;/th&gt;
+&lt;th&gt;在HTML中的写法&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;text-align: center; &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;align=&amp;quot;center&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;文档的居中&lt;/td&gt;
+&lt;td&gt;孤证不立&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;width:200px;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;width=&amp;quot;200px&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;宽度200像素&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;heigh&lt;/strong&gt; 高度同理&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>总结</title>
+        <link>https://example.com/p/%E6%80%BB%E7%BB%93/</link>
+        <pubDate>Mon, 23 May 2022 22:32:42 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E6%80%BB%E7%BB%93/</guid>
+        <description>&lt;h2 id=&#34;经验总结&#34;&gt;经验总结&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;给框
+&lt;ul&gt;
+&lt;li&gt;也就是高度和宽度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注意给浮动
+&lt;ul&gt;
+&lt;li&gt;不给可能会挤出边框，或者无法正常显示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;注意结束标记的存放位置
+&lt;ul&gt;
+&lt;li&gt;有的元素是包含关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;一些技巧&#34;&gt;一些技巧&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;a元素可以用color（颜色）和text-decoration（文本样式），定义颜色和去除下划线&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
